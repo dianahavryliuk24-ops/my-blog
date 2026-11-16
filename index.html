@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карпатські маршрути | Мій блог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light text-dark">
+
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="#">KarpatyBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-3">
+                        <li class="nav-item"><a class="nav-link active" href="#">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#posts">Публікації</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Про автора</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+                        <li class="nav-item">
+                            <button id="themeToggleBtn" class="btn btn-outline-dark btn-sm">🌙 Темна тема</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section py-5 bg-white border-bottom text-center">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold mb-3">Відкриваємо Карпати разом</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Мій особистий блог із порадами та рекомендаціями: куди піти, що подивитися та які місця варто відвідати.
+            </p>
+        </div>
+    </section>
+
+    <main class="container my-5">
+
+        <div class="row mb-5 justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Пошук локацій...">
+            </div>
+        </div>
+
+        <div id="noResults" class="text-center text-muted fs-4 d-none mb-5">Публікацій не знайдено</div>
+
+        <section id="posts" class="mb-5">
+            <h2 class="mb-4 fw-bold">Гори на які я раджу вам піти</h2>
+            <div class="row g-4" id="postsContainer">
+                
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="говерла">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Говерла3.jpg" class="card-img-top" alt="Говерла" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2 align-self-start">Вершина</span>
+                            <h5 class="card-title fw-bold">Говерла</h5>
+                            <p class="card-text text-muted small">15 June 2025</p>
+                            <p class="card-text post-desc">Найвища точка України, яку обов'язково варто підкорити кожному мандрівнику.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">Підйом на Говерлу залишає неймовірні враження. На вершині на вас чекає панорама на всі Карпати.</p>
+                                <div class="row g-2 mt-2">
+                                    <div class="col-6"><img src="images/Говерла1.jpg" class="img-fluid rounded" alt="Говерла 1" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                    <div class="col-6"><img src="images/Говерла2.jpg" class="img-fluid rounded" alt="Говерла 2" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="шпиці">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Шпиці2.jpg" class="card-img-top" alt="Шпиці" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-2 align-self-start">Вершина</span>
+                            <h5 class="card-title fw-bold">Шпиці</h5>
+                            <p class="card-text text-muted small">10 June 2025</p>
+                            <p class="card-text post-desc">Неймовірні скелі та дика природа Чорногірського хребта.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">Коли ви будете підніматися на Шпиці, то обов'язково зустрінете чарівне озеро Несамовите.</p>
+                                <div class="row g-2 mt-2">
+                                    <div class="col-6"><img src="images/Шпиці1.jpg" class="img-fluid rounded" alt="Шпиці 1" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                    <div class="col-6"><img src="images/Шпиці3.jpg" class="img-fluid rounded" alt="Шпиці 3" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="хом'як">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Хом'як3.jpg" class="card-img-top" alt="Хом'як" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning bg-opacity-10 text-warning mb-2 align-self-start">Вершина</span>
+                            <h5 class="card-title fw-bold">Хом'як</h5>
+                            <p class="card-text text-muted small">28 May 2025</p>
+                            <p class="card-text post-desc">Чудова гора для яскравого походу та зустрічі світанків.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">На Хом'як підніматися дуже цікаво, а неподалік звідти можна поїхати й подивитися на водоспад Гук.</p>
+                                <div class="row g-2 mt-2">
+                                    <div class="col-6"><img src="images/Хом'як1.jpg" class="img-fluid rounded" alt="Хом'як 1" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                    <div class="col-6"><img src="images/Хом'як2.jpg" class="img-fluid rounded" alt="Хом'як 2" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="котеджі">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Котедж2.jpg" class="card-img-top" alt="Котеджі" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info bg-opacity-10 text-info mb-2 align-self-start">Житло</span>
+                            <h5 class="card-title fw-bold">Котеджі</h5>
+                            <p class="card-text text-muted small">02 May 2025</p>
+                            <p class="card-text post-desc">Де зупинитися відпочити.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">Оскільки я живу в селі Устеріки, то у нас є багато котеджів, чанів,(за деталями пишіть) я можу запропонувати вам такі два котеджі з яких ви можете дістатися до Писаного каменя навіть пішки. А загалом у регіоні їх є дуже багато.</p>
+                                <div class="row g-2 mt-2">
+                                    <div class="col-12"><img src="images/Котедж1.jpg" class="img-fluid rounded" alt="Котедж 1" style="height: 150px; object-fit: cover; width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="писаний камінь">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Писаний камінь1.jpg" class="card-img-top" alt="Писаний Камінь" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger bg-opacity-10 text-danger mb-2 align-self-start">Локація</span>
+                            <h5 class="card-title fw-bold">Писаний Камінь</h5>
+                            <p class="card-text text-muted small">15 May 2025</p>
+                            <p class="card-text post-desc">Містичні скелі з давніми написами посеред мальовничого лісу.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">Можу запропонувати піти на Писаний Камінь, оскільки він знаходиться недалеко від мого дому, тому якщо ви будете в цьому регіоні то буде дуже зручно і вигідно завітати сюди.</p>
+                                <div class="row g-2 mt-2">
+                                    <div class="col-6"><img src="images/Писаний камінь2.jpg" class="img-fluid rounded" alt="Писаний 2" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                    <div class="col-6"><img src="images/Писаний камінь3.jpg" class="img-fluid rounded" alt="Писаний 3" style="height: 120px; object-fit: cover; width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 post-card-wrapper" data-title="поради">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/Хом'як2.jpg" class="card-img-top" alt="Поради" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary bg-opacity-10 text-secondary mb-2 align-self-start">Поради</span>
+                            <h5 class="card-title fw-bold">Поради мандрівникам</h5>
+                            <p class="card-text text-muted small">20 April 2025</p>
+                            <p class="card-text post-desc">Що взяти з собою у рюкзак та як безпечно мандрувати горами.</p>
+                            <div class="extra-content d-none">
+                                <p class="text-muted small mt-2">Завжди беріть із собою зручне взуття, дощовик та гарний настрій перед виходом на будь-який маршрут.</p>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <button class="btn btn-outline-success btn-sm read-more-btn">Читати далі</button>
+                                <button class="btn btn-sm btn-outline-danger like-btn">❤️ Подобається (<span class="like-count">0</span>)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="my-5 p-5 bg-white rounded shadow-sm border">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center mb-3 mb-md-0">
+                    <img src="images/Автор.jpg" class="rounded-circle img-fluid shadow" alt="Автор" style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+                <div class="col-md-9">
+                    <h3 class="fw-bold mb-2">Про автора</h3>
+                    <p class="text-muted">Привіт! Мене звати Діана. Я народилася в селі Устеріки. Я дуже люблю гори, мені неймовірно подобається ними мандрувати та відкривати нові красиві місця. У цьому блозі я ділюся власними порадами та рекомендаціями щодо найкращих локацій і відпочинку.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="my-5 p-5 bg-white rounded shadow-sm border">
+            <h3 class="fw-bold mb-4 text-center">Зворотний зв'язок</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div id="formAlert" class="alert d-none" role="alert"></div>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Ваше ім'я</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Введіть ім'я">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Електронна пошта</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subjectSelect" class="form-label">Тема повідомлення</label>
+                            <select class="form-select" id="subjectSelect">
+                                <option value="" selected disabled>Оберіть тему...</option>
+                                <option value="trip">Порада щодо маршруту чи котеджів</option>
+                                <option value="cooperation">Співпраця</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userMessage" class="form-label">Повідомлення</label>
+                            <textarea class="form-control" id="userMessage" rows="4" placeholder="Ваше повідомлення (мінімум 10 символів)..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-1">© 2026 Карпатський блог | Всі права захищено</p>
+            <p class="small text-muted mb-0">Створено з любов'ю до гір</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
